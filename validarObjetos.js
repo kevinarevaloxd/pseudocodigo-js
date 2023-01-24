@@ -1,9 +1,15 @@
-let objeto = {rut:"1", x:"0"}
+let rut;
+let objetoVacio = {};
+let objeto = {rut: rut}
 let objeto2 = {primerNombre:"Kevin", segundoNombre:"Guillermo"};
 let objeto3 = {primerApellido:"Arevalo", segundoApellido:"Alveal"}
 
 const query = `rut${objeto.rut}`
-console.log(query)
+if (!objeto.rut){
+    console.log('esta vacio')
+} else {
+    console.log('no esta vacio')
+}
 
 
 
